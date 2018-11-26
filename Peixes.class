@@ -1,0 +1,28 @@
+public class Peixe extends Animal{
+    private String caracteristica;
+    public Peixe(String nome, String cor, String ambiente, double comprimento, double velMedia, int numPatas,String caract) {
+        super(nome,cor,ambiente,comprimento,velMedia,numPatas);
+        this.caracteristica = caract;
+        
+    
+    }
+
+    public String getCaracteristica() {
+        return caracteristica;
+    }
+
+    public void setCaracteristica(String caracteristica) {
+        this.caracteristica = caracteristica;
+    }
+    public void dadosPeixe(){
+        System.out.println("Dados do Animal:");
+        System.out.println("Nome: "+this.getNome());
+        System.out.println("Cor: "+this.getCor());
+        System.out.println("Ambiente: "+this.getAmbiente());
+        System.out.println("Comprimento: "+this.getComprimento());
+        System.out.println("Velocidade média: "+this.getVelMedia());
+        System.out.println("Número de patas: "+this.getNumPatas());
+        System.out.println("Caracteristicas: "+this.getCaracteristica());
+        System.out.println("--------------------------------");
+    }
+}
